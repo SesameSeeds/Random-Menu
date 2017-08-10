@@ -20,7 +20,11 @@ foods = [" Haggis.", " Kopi Luwak.", " Milt.", " Balut.", " Hákarl.", " Casu Ma
 puts "\nMenu Item #{x+1}"
   random_adj = adj.sample
   adj.delete(random_adj)
-puts random_adj + styles.sample + foods.sample
+  random_style = styles.sample
+  styles.delete(random_style)
+  random_food = foods.sample
+  foods.delete(random_food)
+puts random_adj + random_style + random_food
 end
 
 # End note to user.
